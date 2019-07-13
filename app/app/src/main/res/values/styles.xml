@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="ActivitySearchTitleCollection">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ActivitySearchSeeAll">
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,8 +11,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
         /*start_activity_login.setOnClickListener() {
-            // Lance l'activité de connection mais pour l'instant c'est dans main_activity
+
         }*/
     }
 }

@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        /*mon_icone.setOnClickListener() {
+        /*start_activity_login.setOnClickListener() {
             // Lance l'activité de connection mais pour l'instant c'est dans main_activity
         }*/
     }

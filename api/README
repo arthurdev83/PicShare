@@ -1,0 +1,9 @@
+Mettre à jour la BDD :
+
+vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
+
+Migrations diff :
+vendor/bin/doctrine-migrations migrations:diff
+
+Migrations migrate :
+vendor/bin/doctrine-migrations migrations:migrate

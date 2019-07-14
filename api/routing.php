@@ -5,8 +5,12 @@ $uri = $_SERVER['REQUEST_URI'];
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
 
+    //Auth
     $r->addRoute('POST', BASE.'/login', 'AuthController/login');
     $r->addRoute('POST', BASE.'/register', 'AuthController/register');
+
+    //Categories
+    $r->addRoute('GET', BASE.'/categories', 'CategoryController/getAll');
 
 });
 

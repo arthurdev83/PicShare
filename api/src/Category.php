@@ -2,6 +2,7 @@
 
 use Doctrine\ORM\Mapping as ORM;
 use JMS\Serializer\Annotation\Expose;
+use JMS\Serializer\Annotation\Groups;
 
 
 /**

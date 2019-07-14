@@ -12,6 +12,9 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     //Categories
     $r->addRoute('GET', BASE.'/categories', 'CategoryController/getAll');
 
+    //Placezs
+    $r->addRoute('GET', BASE.'/places', 'PlaceController/getAll');
+
 });
 
 if (false !== $pos = strpos($uri, '?')) {

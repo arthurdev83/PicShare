@@ -30,7 +30,7 @@ class Place
 
     /**
      * @ORM\ManyToOne(targetEntity="Category", fetch="EAGER",cascade={"persist"})
-     * @ORM\JoinColumn(name="cetegory_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      * @Expose
      */
     private $category;

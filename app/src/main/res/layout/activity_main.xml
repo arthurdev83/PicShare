@@ -43,28 +43,58 @@
                         android:background="@color/colorLightGrey"
                         android:id="@+id/activity_search_main_view">
 
-            <RelativeLayout android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/activity_search_title_layout"
-                            android:padding="10dp">
+            <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
 
 
-                <TextView android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_alignParentStart="true"
-                          android:text="Legendary food"/>
-
-                <TextView android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_alignParentEnd="true"
-                          style="style/ActivitySearchSeeAll"
-                          android:text="See all"/>
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/activity_search_title_layout"
+                                android:padding="10dp">
 
 
-            </RelativeLayout>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentStart="true"
+                              android:text="Legendary food"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentEnd="true"
+                              style="style/ActivitySearchSeeAll"
+                              android:text="See all"/>
 
 
-            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/activity_main_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/activity_main_go_to_login" android:text="PAGE LOGIN"/>
+
+</LinearLayout>
+
+
+
+<!--
+
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
 
 
                 <RelativeLayout android:layout_width="140dp"
@@ -103,15 +133,4 @@
 
                 </RelativeLayout>
 
-            </LinearLayout>
-
-
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/activity_main_go_to_login" android:text="PAGE LOGIN"/>
-
-</LinearLayout>
+            </LinearLayout>-->
